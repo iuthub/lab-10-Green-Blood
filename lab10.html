@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab10</title> 
+	<script type="text/javascript" src="lab10.js"></script>
+	<style>
+		#daff, #rose{
+			display: none;
+			width: 100px;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+<!-- task1-2 -->
+	<h1>Calculate your Body Mass Index (BMI)!</h1>
+		<fieldset>
+			Weight (in pounds): <input type="text" id="weight" /><br />
+			Height (in inches): <input type="text" id="height" /><br />
+			<button onclick="calculate();">Get BMI!</button>
+		</fieldset>
+	<p>
+		Your BMI is <span id="score"></span>. <br />
+		Your body type is <span id="type"></span>.
+	</p>
+<!-- task3 -->
+	<h1>Flower Garden</h1>
+		<div>
+			Rows: <input type="text" id ="rows" />
+			Columns: <input type="text" id ="columns" /> <br />
+			<button onclick="grow();">Plant Garden</button>
+		</div>
+		<div id="garden">
+		</div>
+<!-- task4 -->
+	<fieldset>
+		Convert <input type="text" id = "m"/>
+		<select id="sel1">
+			<option>kg</option>
+			<option>lb</option>
+		</select>
+		to
+		<select id="sel2">
+			<option>lb</option>
+			<option>kg</option>
+		</select>
+			<button onclick="convert();">Calculate</button>
+		<span id="answer"></span>
+	</fieldset>
+</body>
+</html>
